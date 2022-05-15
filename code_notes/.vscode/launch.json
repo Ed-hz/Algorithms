@@ -1,0 +1,83 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    {
+      "type": "java",
+      "request": "attach",
+      "name": "Attach by Process ID",
+      "processId": "${command:PickJavaProcess}"
+    },
+    {
+      "type": "R-Debugger",
+      "name": "Debug R-File",
+      "request": "launch",
+      "debugMode": "file",
+      "workingDirectory": "",
+      "file": ""
+    },
+      {
+        "type": "java",
+        "name": "Launch ds",
+        "request": "launch",
+        "mainClass": "ds",
+        "projectName": "c_filed_92e15931"
+      },
+      {
+        "name": "(gdb) Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "externalConsole": false,
+        "internalConsoleOptions": "neverOpen",
+        "MIMode": "gdb",
+        "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "g++"
+      },
+      {
+        "type": "java",
+        "name": "Launch import_",
+        "request": "launch",
+        "mainClass": "import_",
+        "projectName": "c_filed_92e15931"
+      },
+      {
+        "type": "java",
+        "name": "Launch obj",
+        "request": "launch",
+        "mainClass": "obj",
+        "projectName": "c_filed_92e15931"
+      },
+      {
+        "type": "java",
+        "name": "Launch stru",
+        "request": "launch",
+        "mainClass": "stru",
+        "projectName": "c_filed_92e15931"
+      },
+      {
+        "type": "java",
+        "name": "Launch in",
+        "request": "launch",
+        "mainClass": "in",
+        "projectName": "c_filed_92e15931"
+      },
+      {
+        "type": "java",
+        "name": "Launch First",
+        "request": "launch",
+        "mainClass": "First",
+        "projectName": "c_filed_92e15931"
+      }
+    ]
+  }

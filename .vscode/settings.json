@@ -1,0 +1,5 @@
+{
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc --target=x86_64-w64-mingw -std=c++14 &&$dir$fileNameWithoutExt.exe"
+  }
+}
