@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "1-1.h"
 
 void PrintN ( int N );
 
